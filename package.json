@@ -1,0 +1,22 @@
+{
+  "name": "silviasilveira",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseCarlos-13/site-SS-udemy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseCarlos-13/site-SS-udemy/issues"
+  },
+  "homepage": "https://github.com/JoseCarlos-13/site-SS-udemy#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

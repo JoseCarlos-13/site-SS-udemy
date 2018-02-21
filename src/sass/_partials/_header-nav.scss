@@ -1,0 +1,10 @@
+.header-nav {
+	background-color: lighten($main-color, 10%);
+
+	&__logo {
+		display: inline-block;
+		max-width: 350px;
+		position: relative;
+		top: 10px;
+	}
+}

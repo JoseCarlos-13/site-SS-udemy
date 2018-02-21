@@ -1,0 +1,11 @@
+.header-nav {
+  background-color: #84b8af; }
+  .header-nav__logo {
+    display: inline-block;
+    max-width: 350px;
+    position: relative;
+    top: 10px; }
+
+.header-animado {
+  background-color: #64a59a;
+  height: 300px; }

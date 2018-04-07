@@ -22,8 +22,11 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bower": "^1.8.2",
+    "browser-sync": "^2.23.6",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.0",
     "jquery": "^3.3.1"
-  }
+  },
+  "devDependencies": {}
 }

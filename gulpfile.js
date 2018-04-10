@@ -18,7 +18,7 @@ var gulp   = require ('gulp')
 		
 		/*monitoramento de arquivos scss*/
 		gulp.watch('./src/sass/**/*.scss', ['sass'])
-		gulp.watch('./src/css/*.css').on('change', browserSync.reload)
+		gulp.watch('./src/**/*').on('change', browserSync.reload)
 	})
 
 	

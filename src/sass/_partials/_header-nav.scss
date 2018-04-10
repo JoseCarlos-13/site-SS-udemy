@@ -64,5 +64,9 @@
 			display: none;
 		}
 
+		.menu-opened &{
+			display: block;
+		}
+
 	}
 }

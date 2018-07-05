@@ -12,27 +12,9 @@
 </head>
 	
 <body>
-	<nav class="header-nav">
-		<div class="container">
-			<a href="index.html" class="header-nav__logo">
-				<img src="imagens/logo.svg" alt="Logotipo Silvia Silveira">
-			</a>
-			
-			<button aria-controls="mainMenu" class="header-nav__hamburgger" type="button" aria-expanded="false">
-				<div class="header-nav__hamburggerParties">
-					<span class="sr-only">Menu</span>
-				</div>
-				
-				<i class="fa fa-bars" aria-hidden="true"></i>
-			</button>
-			
-			<ul class="header-nav__menu" id="mainMenu" aria-expanded="false">
-				<li><a href="#">Portifolio</a></li>
-				<li><a href="#">Sobre mim</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</div>
-	</nav>
+	
+@@include('./inc/nav.html')
+	
 
 	<div class="jumbotron header-animado" >
 		<div class="container">
@@ -55,113 +37,32 @@
 				<h1>Ultimos Trabalhos</h1>
 			</div>
 		
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/01.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
+			@@loop('./inc/card-portfolio.html', [
+			
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/01.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
 
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/02.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/02.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
 
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/03.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/04.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/05.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/06.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail card-portfolio">
-					<h3 class="card-portfolio__title">titulo do trabalho</h3>
-						<div class="card-portfolio__imagem">
-							<img src="imagens/portfolio/07.jpg" alt="texto alternativo">
-						</div>
-					<div class="caption card-portfolio__caption">
-						<p class="card-portfolio__text">pequeno texto</p>
-					</div>
-					<a href="#" class="card-portfolio__btn btn btn-primary" role"button">Ver mais</a>
-				</div>
-			</div>
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/03.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"}
+			])
 		
 		</div>
 		<hr>
 		</div>
 		
-		<footer class="rodape">
-			<div class="container">
-				<p class="text-muted text-right">Social:</p>
-				<ul class="list-inline pull-right">
-					<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></li>
-					<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a></li>
-					<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
-					<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a></li>
-					<li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a></li>
-				</ul>
-			</div>
-		</footer>
+		@@include('./inc/footer.html')
 		
 		<script src="javascript/menu.js"></script>
 		<script src="javascript/main.js"></script>	

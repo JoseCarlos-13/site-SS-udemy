@@ -5,19 +5,24 @@
 	background-color: $main-color;
 	padding-top: 96px;
 	padding-bottom: 0;
-	margin-bottom: 0;
+	margin-bottom: 32px;
 
 	.header-animado__title{
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 		color: #00151a;
 		font-size: 38px;
 		font-weight: bold;
+		text-align: center;
 	}
 
 	.header-animado__subtitle{
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 		color: white;
 		font-size: 34px;
 		font-weight: 300;
 		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 50px;
 	}
 
 	&__ilustra{

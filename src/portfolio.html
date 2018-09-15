@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Site pessoal</title>
+	
+	<link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+</head>
+	
+<body>
+	
+@@include('./inc/nav.html')
+	
+
+	<div class="jumbotron header-animado" >
+		<div class="container">
+			<p class="header-animado__title" align="center">O que eu ando fazendo</p>
+			<h1 class="header-animado__subtitle" align="center">veja alguns dos meus trabalhos</h1>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Ultimos Trabalhos</h1>
+			</div>
+		
+			@@loop('./inc/card-portfolio.html', [
+			
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/01.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/02.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/03.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/04.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/05.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/06.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"},
+
+				{"titulo": "titulo alterado",
+				"imagem": "imagens/portfolio/07.jpg",
+				"legenda": "texto",
+				"link": "#",
+				"alt": "texto alternativo"}
+			])
+		
+		</div>
+		<hr>
+		</div>
+		
+		@@include('./inc/footer.html')
+		
+		<script src="javascript/menu.js"></script>
+		<script src="javascript/main.js"></script>	
+</body>
+</html>
